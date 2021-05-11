@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Choose a color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" placeholder="enter a number" id="number" name="number">
+        </p>
+        <!-- Its the most used, bcse the JS. -->
+        <button type="button">Dont Submit</button>
+        <!-- The default behavior is to submit the form. -->
+        <button>Submit</button>
+        <!-- is not usual, u have to add a value to change the name -->
+        <input type="submit" name="" id="" value="Click me!!">
+
+    </form>
+
+</body>
+
+</html>
