@@ -5,63 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Exercise</title>
 </head>
 
 <body>
-    <h1>Hijacking Searches</h1>
-    <h2>Reddit</h2>
-    <form action="https://www.reddit.com/search">
-        <p>
-            <label for="reddit">Reddit Search</label>
-            <input type="text" name="q" id="reddit">
-            <button>Go !</button>
-        </p>
-    </form>
-    <hr>
-    <h2>Google</h2>
+    <header>
+        <h1>Forms Exercises</h1>
+    </header>
+    <main>
+        <!-- Username Input -->
+        <form action="database">
+            <p>
+                <label for="gender">Select your Gender</label>
+                <select name="gender" id="gender">
+                    <option value="">---Select One---</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </p>
+            <p>
 
-    <form action="https://www.google.com/search">
-        <p>
-            <label for="google">Google Search</label>
-            <input type="text" name="q" id="google">
-            <button>Go Google</button>
-        </p>
-    </form>
-    <hr>
-    <h2>Youtube Searches</h2>
+                <label for="single">Single</label>
+                <input type="radio" name="status" id="single" value="single">
+                <label for="married">Married</label>
+                <input type="radio" name="married" id="married" value="married">
 
-    <form action="https://www.youtube.com/results">
-        <p>
-            <input type="text" name="search_query" id="youtube">
-            <button>Youtube</button>
-        </p>
+            </p>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password">
+            </p>
+            <button>Register</button>
+        </form>
 
-    </form>
-    <hr>
-    <h2>More Inputs (checkbox)</h2>
-    <form action="/birds">
-        <input type="checkbox" name="agree_tos" id="agree">
-        <label for="agree">I agree to everything</label>
-        <p>
-            <label for="xs">XS</label>
-            <input type="radio" name="size" id="xs" value="xs">
-            <label for="s">S</label>
-            <input type="radio" name="size" id="s" value="s">
-            <label for="m">M</label>
-            <input type="radio" name="size" id="m" value="m">
-        </p>
-        <p>
-            <label for="meal">Please Select an Entree</label>
-            <select name="meal" id="meal">
-                <option value="">Please select one option</option>
-                <option value="fish">Fish</option>
-                <option value="veg">Vegetarian</option>
-                <option value="steak">Steak</option>
-            </select>
-        </p>
-        <button>Submit</button>
-    </form>
+
+
+    </main>
+
 
 </body>
 

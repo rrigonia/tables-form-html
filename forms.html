@@ -35,6 +35,85 @@
         <input type="submit" name="" id="" value="Click me!!">
 
     </form>
+    <hr>
+    <h2>Hijacking Searches</h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <p>
+            <label for="reddit">Reddit Search</label>
+            <input type="text" name="q" id="reddit">
+            <button>Go !</button>
+        </p>
+    </form>
+    <hr>
+    <h3>Google</h3>
+
+    <form action="https://www.google.com/search">
+        <p>
+            <label for="google">Google Search</label>
+            <input type="text" name="q" id="google">
+            <button>Go Google</button>
+        </p>
+    </form>
+    <hr>
+    <h3>Youtube Searches</h3>
+
+    <form action="https://www.youtube.com/results">
+        <p>
+            <input type="text" name="search_query" id="youtube">
+            <button>Youtube</button>
+        </p>
+
+    </form>
+    <hr>
+    <h3>More Inputs (checkbox)</h3>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="">Please select one option</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" value="7" name="cheese_level" id="cheese" min="1" max="10">
+        </p>
+        <button>Submit</button>
+        <p>
+            <label for="text-area"> Any Special Request?</label>
+            <br>
+            <textarea name="request" id="text-area" cols="30" rows="10" placeholder="Type anything here!."></textarea>
+        </p>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <!-- <input type="email" name="" id="" required> -->
+            <label for="url">Url input</label>
+            <input type="url" id="url" name="url">
+        </p>
+        <button>Submit</button>
+
+    </form>
 
 </body>
 
